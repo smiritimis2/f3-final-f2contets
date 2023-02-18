@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping Cart</title>
+</head>
+<style>
+
+h3
+{
+    position: relative;
+    top:20px;
+    left:400px;
+    font-size: 60px;
+    color: black;
+}
+
+#apidata
+{
+    /*position: relative;
+    top:100px;
+    height:1000px;
+    width: 300px;
+    display: flex;
+    box-sizing: border-box;*/
+    flex-direction:row;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-flow: wrap;
+
+
+
+
+   
+}
+#nav
+{
+    height: 50px;
+    width: 1500px;
+    color:white;
+    background-color:black;
+     font-style: arial;
+    position: fixed;
+    top:0px;
+   
+
+}
+#home
+{
+    position: relative;
+    left:800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#body
+{
+margin:500px;
+
+}
+
+#order
+{
+height:20px;
+width: 50px;
+color:blueviolet
+
+
+}
+</style>
+<body>
+   
+    <div id="nav">
+      Menu Card
+      <div id="home">
+          Home Page
+          Cart Page
+      </div>
+    </div>
+    <button id="order">Place order</button>
+    <h3 id="name">All Items</h3>
+    <div id="apidata"></div>
+
+    <div id="main"></div>
+
+ <table id="row"></table>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
