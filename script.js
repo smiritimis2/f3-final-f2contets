@@ -1,4 +1,4 @@
-let mains=document.getElementsByTagName("main");
+let mains=document.getElementById("main");
 let major=document.getElementById("apidata");
 let tb=document.getElementById("row");
 let bd=document.getElementsByTagName("body");//fetchimg data from given url
@@ -118,6 +118,25 @@ function getMenu()
         second:`${mydata2.name}`,
        third:`${mydata3.name}`
          }
+
+    mains.innerHTML=`
+    
+    your orders are
+    <br>
+    ${obj.first}
+<br>
+    ${obj.second}
+    <br>
+    ${obj.third}
+    `
+//main.style.color=
+mains.style.height="100px";
+    mains.style.width="200px";
+      mains.style.borderStyle="solid";
+    
+  mains.style.borderRadius="5px";
+    mains.style.borderColor="black"
+    mains.style.display="block";
 
       console.log(obj.first);
       console.log(obj.second);
